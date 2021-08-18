@@ -5,9 +5,9 @@
 }
 .container {
   padding: 20px;
-  width: 300px;
+  width: 400px;
   max-height: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   background-color: #fff;
 
   box-shadow: 4px 5px 10px #005;
@@ -29,7 +29,7 @@ h2 {
 
 form {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns:1fr ;
   grid-gap: 8px;
   margin-top: 20px;
 }
