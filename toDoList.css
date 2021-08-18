@@ -6,11 +6,13 @@
 .container {
   padding: 20px;
   width: 300px;
+  max-height: 100%;
   max-width: 100%;
   background-color: #fff;
 
   box-shadow: 4px 5px 10px #005;
   border-radius: 10px;
+  overflow: auto;
 }
 body {
   height: 100vh;
@@ -30,14 +32,14 @@ form {
   grid-template-columns: 1fr auto;
   grid-gap: 8px;
   margin-top: 20px;
-  /* text-decoration: underline; */
 }
 
 #listitem {
   border: 0;
   border-bottom: 2px solid #000;
   transition: 0.15s;
-
+  font-weight: bold;
+  font-size: 25px;
   text-align: center;
 }
 #listitem:focus {
@@ -67,13 +69,18 @@ li {
   padding: 8px;
   font-size: 16px;
   transition: 0.1s;
-  overflow: hidden;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* overflow: auto; */
 }
 li:nth-child(odd) {
-  background: rgb(255, 226, 226);
+  background: rgb(248, 248, 247);
 }
 li:nth-child(even) {
-  background: rgb(255, 168, 168);
+  background: rgb(224, 250, 253);
 }
 li:hover {
   background: #af0;
